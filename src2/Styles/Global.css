@@ -1,0 +1,32 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin:auto;
+  background-color: #262626c9;
+  width: 55%;
+}
+.text{
+  background-color: #121212;
+  border: 0.2rem solid black;
+  color: #FFC529;
+  padding: 1rem 1rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3.4rem 3.5rem, rgba(0, 0, 0, 0.12) 0 -0.75rem 1.8rem, rgba(0, 0, 0, 0.12) 0 1rem 1.4rem, rgba(0, 0, 0, 0.17) 0 2rem 1.8rem, rgba(0, 0, 0, 0.09) 0 -0.8rem 1rem;
+}
+.socials > a{
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  color:#FFC529;
+}
+.socials >a:hover{
+  color:#af8206;
+  cursor: pointer;
+  transition: all 0.3s smooth;
+}
