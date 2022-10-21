@@ -1,5 +1,5 @@
 import { FaLinkedin } from 'react-icons/fa';
-import './Global.css';
+import './global.css';
 
 
 function App() {
