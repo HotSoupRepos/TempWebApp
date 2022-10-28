@@ -12,6 +12,8 @@ body {
 	background-color: var(--mainBackground);
 	font-family: "Inder", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
+	padding: 1rem;
+	font-size: 16px;
 }
 
 .navbar {
@@ -34,4 +36,64 @@ body {
 	display: flex;
 	align-items: center;
 	text-align: center;
+	margin: 0;
 }
+
+/**************
+**** MAIN ****
+**************/
+.main {
+	display: flex;
+	flex-direction: row;
+}
+.main-text {
+	width: 40%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+}
+.main-photos {
+	width: 60%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/**************
+** MAIN TEXT **
+**************/
+.main-text h1 {
+	font-weight: 400;
+	font-size: 7rem;
+	line-height: 7rem;
+	color: var(--primaryYellow);
+	text-shadow: 0px 4px 20px #000000;
+	filter: blur(2px);
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.main-text p {
+	font-size: 1rem;
+	line-height: 1.3rem;
+	color: var(--white);
+}
+.main-text button {
+	background-color: var(--primaryYellow);
+	border-radius: 40px;
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 29px;
+	width: max-content;
+	padding: 5px 20px;
+	margin: 8px 0;
+	color: var(--mainBackground);
+}
+button:hover {
+	background-color: var(--black);
+	color: var(--secondayYellow);
+}
+
+/**************
+* MAIN PHOTOS *
+**************/

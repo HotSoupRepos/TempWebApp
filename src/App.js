@@ -14,7 +14,7 @@ const App = () => {
 				<img src={Logo} alt="hotsouplogo" />
 				<h2>HotSoup</h2>
 			</nav>
-			<div>
+			<div className="main">
 				<div className="main-text">
 					<h1>COMING SOON</h1>
 					<p>
@@ -35,8 +35,10 @@ const App = () => {
 						details, all of our INCREDIBLE volunteers and links to download the
 						app!
 					</p>
-					<button>VOLUNTEER - JOIN THE DISCORD</button>
-					<button>BACK OUR PROJECT</button>
+					<button className="btn-volunteer">
+						VOLUNTEER - JOIN THE DISCORD
+					</button>
+					<button className="btn-kickstarter">BACK OUR PROJECT</button>
 				</div>
 				<div className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
