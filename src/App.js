@@ -42,12 +42,14 @@ const App = () => {
 				</div>
 				<div className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
-					<img src={Arrow} alt="arrow"></img>
+					<img className="arrow" src={Arrow} alt="arrow"></img>
 					<img
+						className="phone preview"
 						src={PhonePreview}
 						alt="phone preview of home screen of the app"
 					></img>
 					<img
+						className="phone search"
 						src={PhoneSearch}
 						alt="phone preview of search feature of the app"
 					></img>
