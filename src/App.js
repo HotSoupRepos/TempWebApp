@@ -1,4 +1,3 @@
-// import { FaLinkedin } from "react-icons/fa";
 import "./global.css";
 import Logo from "./assets/HotSoupLogo .png";
 import PhonePreview from "./assets/PhonePreview.png";
@@ -35,10 +34,14 @@ const App = () => {
 						details, all of our INCREDIBLE volunteers and links to download the
 						app!
 					</p>
-					<button className="btn-volunteer">
-						VOLUNTEER - JOIN THE DISCORD
-					</button>
-					<button className="btn-kickstarter">BACK OUR PROJECT</button>
+					<a href="https://discord.gg/9fjFWNSrmn">
+						<button className="btn-volunteer">
+							VOLUNTEER - JOIN THE DISCORD
+						</button>
+					</a>
+					{/* <a href="">
+						<button className="btn-kickstarter">BACK OUR PROJECT</button>
+					</a> */}
 				</div>
 				<div className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
