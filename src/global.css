@@ -44,22 +44,25 @@ body {
 **************/
 .main {
 	display: flex;
-	flex-direction: col-reverse;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .main-text {
-	width: 40%;
-	height: 100vh;
+	width: 98%;
+	height: max-content;
 	display: flex;
 	flex-direction: column;
-	padding-left: 2rem;
+	padding: 0 1%;
 }
 .main-photos {
-	width: 60%;
-	height: 100vh;
+	width: 100%;
+	height: max-content;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
 }
 
 /**************
@@ -98,90 +101,42 @@ button:hover {
 /**************
 * MAIN PHOTOS *
 **************/
-.main-photos {
-	position: relative;
-	padding-left: 100px;
-	display: flex;
-}
 .main-photos h3 {
 	text-align: center;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 45px;
-	width: 250px;
-	color: #000000;
-	position: relative;
-	left: 250px;
-	top: -20px;
-
-	text-shadow: 1px 1px 5px #feb74c;
+	margin-top: 50px;
+	color: var(--black);
+	text-shadow: 1px 1px 5px var(--secondayYellow);
+}
+.phones {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 .phone {
 	height: 450px;
-	width: auto;
-	position: absolute;
-	padding-top: 150px;
+	width: 220px;
+}
+.hide {
+	display: none;
 }
 
-.search {
-	top: 250px;
-	left: 370px;
-}
-.arrow {
-	width: 300px;
-	height: auto;
-	position: absolute;
-	left: 300px;
-	top: 100px;
-}
-
-/**************
-* RESPONSIVE *
-**************/
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* Desktop */
+@media screen and (min-width: 768px) {
 	.main {
-		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.main-text {
-		width: 100%;
-		height: max-content;
-		padding-right: 2rem;
+		width: 40%;
 	}
 	.main-photos {
-		width: 100%;
-		display: flex;
-		margin: 0 auto;
+		width: 60%;
 	}
-}
-
-/* Phone */
-@media screen and (max-width: 767px) {
-	.main {
+	.phones {
 		display: flex;
-		flex-direction: column;
-	}
-	.main-text {
-		width: 100%;
-		height: max-content;
-		padding-right: 2rem;
-	}
-	.main-photos {
-		width: 100%;
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-	.phone {
-		display: flex;
-		justify-content: center;
-	}
-
-	.main-photos h3 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		gap: 4rem;
 	}
 }

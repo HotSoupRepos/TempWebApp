@@ -2,7 +2,6 @@ import "./global.css";
 import Logo from "./assets/HotSoupLogo .png";
 import PhonePreview from "./assets/PhonePreview.png";
 import PhoneSearch from "./assets/PhoneSearch.png";
-import Arrow from "./assets/Arrow.png";
 
 import React from "react";
 
@@ -45,17 +44,18 @@ const App = () => {
 				</div>
 				<div className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
-					<img className="arrow" src={Arrow} alt="arrow"></img>
-					<img
-						className="phone preview"
-						src={PhonePreview}
-						alt="phone preview of home screen of the app"
-					></img>
-					<img
-						className="phone search"
-						src={PhoneSearch}
-						alt="phone preview of search feature of the app"
-					></img>
+					<div className="phones">
+						<img
+							className="phone"
+							src={PhonePreview}
+							alt="phone preview of home screen of the app"
+						></img>
+						<img
+							className="phone"
+							src={PhoneSearch}
+							alt="phone preview of search feature of the app"
+						></img>
+					</div>
 				</div>
 			</div>
 		</div>
