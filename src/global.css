@@ -44,7 +44,7 @@ body {
 **************/
 .main {
 	display: flex;
-	flex-direction: row;
+	flex-direction: col-reverse;
 	justify-content: center;
 	align-items: center;
 }
