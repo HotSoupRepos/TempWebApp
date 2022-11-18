@@ -43,26 +43,13 @@ body {
 **** MAIN ****
 **************/
 .main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	display: grid;
 	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
-.main-text {
-	width: 98%;
-	height: max-content;
-	display: flex;
-	flex-direction: column;
-	padding: 0 1%;
-}
+
 .main-photos {
-	width: 100%;
-	height: max-content;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 4rem;
+	text-align: center;
 }
 
 /**************
@@ -74,9 +61,17 @@ body {
 	line-height: 7rem;
 	color: var(--primaryYellow);
 	text-shadow: 0px 4px 20px #000000;
-	margin-top: 50px;
-	margin-bottom: 25px;
+	margin-top: 3.125rem;
+	margin-bottom: 1.563rem;
+	display: inline;
 }
+@media screen and (max-width: 900px) {
+	.main-text h1 {
+		font-size: 5rem;
+		text-align: center;
+	}
+}
+
 .main-text p {
 	font-size: 1rem;
 	line-height: 1.3rem;
@@ -84,13 +79,13 @@ body {
 }
 .main-text button {
 	background-color: var(--primaryYellow);
-	border-radius: 40px;
+	border-radius: 2.5rem;
 	font-weight: 700;
 	font-size: 1.2rem;
 	line-height: 29px;
 	width: max-content;
-	padding: 5px 20px;
-	margin: 8px 0;
+	padding: 0.313rem 1.25rem;
+	margin: 0.5rem 0;
 	color: var(--mainBackground);
 }
 button:hover {
@@ -104,39 +99,15 @@ button:hover {
 .main-photos h3 {
 	text-align: center;
 	font-weight: 400;
-	font-size: 36px;
-	line-height: 45px;
-	margin-top: 50px;
+	font-size: 2.25rem;
+	line-height: 2.813rem;
+	margin-top: 3.125rem;
 	color: var(--black);
 	text-shadow: 1px 1px 5px var(--secondayYellow);
 }
-.phones {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
-.phone {
-	height: 450px;
-	width: 220px;
-}
-.hide {
-	display: none;
-}
 
-/* Desktop */
-@media screen and (min-width: 768px) {
-	.main {
-		flex-direction: row;
-	}
-	.main-text {
-		width: 40%;
-	}
-	.main-photos {
-		width: 60%;
-	}
-	.phones {
-		display: flex;
-		flex-direction: row;
-		gap: 4rem;
-	}
+.phone {
+	height: 28rem;
+	width: 13rem;
+	margin: 0 2rem;
 }
