@@ -1,32 +1,98 @@
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin:auto;
-  background-color: #262626c9;
-  width: 55%;
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+:root {
+	--primaryYellow: #ffc529;
+	--secondaryYellow: #feb74c;
+	--white: #ffffff;
+	--black: #000000;
+	--mainBackground: #232323;
 }
-.text{
-  background-color: #121212;
-  border: 0.2rem solid black;
-  color: #FFC529;
-  padding: 1rem 1rem;
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 3.4rem 3.5rem, rgba(0, 0, 0, 0.12) 0 -0.75rem 1.8rem, rgba(0, 0, 0, 0.12) 0 1rem 1.4rem, rgba(0, 0, 0, 0.17) 0 2rem 1.8rem, rgba(0, 0, 0, 0.09) 0 -0.8rem 1rem;
+
+body {
+	background-color: var(--mainBackground);
+	font-family: "Inder", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	padding: 0.25rem;
+	font-size: 1rem;
 }
-.socials > a{
-  font-size: 1.8rem;
-  padding-left: 1rem;
-  color:#FFC529;
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.625rem;
+	color: var(--primaryYellow);
 }
-.socials >a:hover{
-  color:#af8206;
-  cursor: pointer;
-  transition: all 0.3s smooth;
+nav > img {
+	width: 3rem;
+	height: 1.5rem;
+}
+nav > h2 {
+	margin: 0;
+}
+
+/**************
+**** MAIN ****
+**************/
+.main {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.main-photos {
+	text-align: center;
+}
+
+/**************
+** MAIN TEXT **
+**************/
+.main-text > h1 {
+	font-size: 4.5rem;
+	color: var(--primaryYellow);
+	text-shadow: 0px 4px 20px #000000;
+	margin-bottom: 1.563rem;
+}
+@media screen and (max-width: 900px) {
+	.main-text > h1 {
+		font-size: 3rem;
+		text-align: center;
+	}
+}
+
+.main-text p {
+	font-size: 0.75rem;
+	color: var(--white);
+}
+.btn-volunteer {
+	background-color: var(--primaryYellow);
+	color: var(--mainBackground);
+	border-radius: 2.5rem;
+	font-size: 1.2rem;
+	width: max-content;
+	padding: 0.313rem 1.25rem;
+	margin: 0.5rem 0;
+}
+button:hover {
+	background-color: var(--black);
+	color: var(--primaryYellow);
+}
+
+/**************
+* MAIN PHOTOS *
+**************/
+.main-photos > h3 {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 1rem;
+	color: var(--secondaryYellow);
+}
+
+.phone {
+	height: 22rem;
+	width: 11rem;
+	margin: 1rem;
 }
