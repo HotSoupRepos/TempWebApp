@@ -8,7 +8,7 @@ import React from "react";
 const App = () => {
 	return (
 		<body>
-			<nav className="navbar">
+			<nav>
 				<img src={Logo} alt="hotsouplogo" />
 				<h2>HotSoup</h2>
 			</nav>

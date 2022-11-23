@@ -16,7 +16,7 @@ body {
 	font-size: 2rem;
 }
 
-.navbar {
+nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -24,11 +24,11 @@ body {
 	gap: 0.625rem;
 	color: var(--primaryYellow);
 }
-.navbar > img {
+nav > img {
 	width: 3.75rem;
 	height: 2rem;
 }
-.navbar > h2 {
+nav > h2 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2.5rem;
