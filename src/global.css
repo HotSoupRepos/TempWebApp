@@ -12,8 +12,8 @@ body {
 	background-color: var(--mainBackground);
 	font-family: "Inder", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
-	padding: 1rem;
-	font-size: 2rem;
+	padding: 0.25rem;
+	font-size: 1rem;
 }
 
 nav {
@@ -25,17 +25,10 @@ nav {
 	color: var(--primaryYellow);
 }
 nav > img {
-	width: 3.75rem;
-	height: 2rem;
+	width: 3rem;
+	height: 1.5rem;
 }
 nav > h2 {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 2.5rem;
-	line-height: 3.125rem;
-	display: flex;
-	align-items: center;
-	text-align: center;
 	margin: 0;
 }
 
