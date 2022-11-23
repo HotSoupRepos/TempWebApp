@@ -7,13 +7,13 @@ import React from "react";
 
 const App = () => {
 	return (
-		<div className="body">
+		<body>
 			<nav className="navbar">
 				<img src={Logo} alt="hotsouplogo" />
 				<h2>HotSoup</h2>
 			</nav>
-			<div className="main">
-				<div className="main-text">
+			<section className="main">
+				<section className="main-text">
 					<h1>COMING SOON</h1>
 					<p>
 						HotSoup is an opensource mobile app project, which is coming soon to
@@ -41,8 +41,8 @@ const App = () => {
 					{/* <a href="">
 						<button className="btn-kickstarter">BACK OUR PROJECT</button>
 					</a> */}
-				</div>
-				<div className="main-photos">
+				</section>
+				<section className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
 					<div className="phones">
 						<img
@@ -56,9 +56,9 @@ const App = () => {
 							alt="phone preview of search feature of the app"
 						></img>
 					</div>
-				</div>
-			</div>
-		</div>
+				</section>
+			</section>
+		</body>
 	);
 };
 
