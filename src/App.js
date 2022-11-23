@@ -46,7 +46,7 @@ const App = () => {
 				</section>
 				<section className="main-photos">
 					<h3>Here Is A Sneak Peak Of The App!</h3>
-					<div className="phones">
+					<div>
 						<img
 							className="phone"
 							src={PhonePreview}

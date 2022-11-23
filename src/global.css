@@ -2,7 +2,7 @@
 
 :root {
 	--primaryYellow: #ffc529;
-	--secondayYellow: #feb74c;
+	--secondaryYellow: #feb74c;
 	--white: #ffffff;
 	--black: #000000;
 	--mainBackground: #232323;
@@ -39,6 +39,8 @@ nav > h2 {
 	display: grid;
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	padding: 1rem;
+	margin: 1rem;
 }
 
 .main-photos {
@@ -49,41 +51,34 @@ nav > h2 {
 ** MAIN TEXT **
 **************/
 .main-text > h1 {
-	font-weight: 400;
-	font-size: 7rem;
-	line-height: 7rem;
+	font-size: 4.5rem;
 	color: var(--primaryYellow);
 	text-shadow: 0px 4px 20px #000000;
-	margin-top: 3.125rem;
 	margin-bottom: 1.563rem;
-	display: inline;
 }
 @media screen and (max-width: 900px) {
 	.main-text > h1 {
-		font-size: 5rem;
+		font-size: 3rem;
 		text-align: center;
 	}
 }
 
-.main-text > p {
-	font-size: 1rem;
-	line-height: 1.3rem;
+.main-text p {
+	font-size: 0.75rem;
 	color: var(--white);
 }
-.main-text > button {
+.btn-volunteer {
 	background-color: var(--primaryYellow);
+	color: var(--mainBackground);
 	border-radius: 2.5rem;
-	font-weight: 700;
 	font-size: 1.2rem;
-	line-height: 2rem;
 	width: max-content;
 	padding: 0.313rem 1.25rem;
 	margin: 0.5rem 0;
-	color: var(--mainBackground);
 }
 button:hover {
 	background-color: var(--black);
-	color: var(--secondayYellow);
+	color: var(--primaryYellow);
 }
 
 /**************
@@ -91,17 +86,13 @@ button:hover {
 **************/
 .main-photos > h3 {
 	text-align: center;
-	font-weight: 400;
-	font-size: 2.25rem;
-	line-height: 2.813rem;
-	margin-top: 3.125rem;
-	margin-bottom: 3.125rem;
-	color: var(--black);
-	text-shadow: 1px 1px 5px var(--secondayYellow);
+	font-size: 2rem;
+	margin-top: 1rem;
+	color: var(--secondaryYellow);
 }
 
 .phone {
-	height: 28rem;
-	width: 13rem;
-	margin: 0 2rem;
+	height: 22rem;
+	width: 11rem;
+	margin: 1rem;
 }
